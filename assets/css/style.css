@@ -1,0 +1,74 @@
+:root {
+    --first-color: #f8b195;
+    --second-color: #f67280;
+    --third-color: #c06c84;
+    --fourth-color: #6c5b7b;
+    --fifth-color: #355c7d;
+  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    padding: 20px 35px;
+    background-color: var(--fifth-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+     position: sticky;
+}
+header h1 {
+    font-size: 34px; 
+    font-weight: 300;
+    line-height: 40px;
+    margin: 0;
+    color: var(--first-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  header a {
+    text-decoration: none;
+    color: var(--first-color);
+  }
+  
+  header nav {
+    margin: 7px 0;
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  header nav ul li a:hover{
+    background: var(--first-color);
+    color: var(--fifth-color);
+    border-radius: 15px;
+    text-shadow: none;
+  }
+  
+
+/* HERO STYLES START */
+.hero {
+  background-image: url('../daphne1.jpg');
+  background-size:  ;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}

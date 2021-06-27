@@ -55,6 +55,13 @@ header nav ul li a {
   font-weight: lighter;
   font-size: 1.55vw;
 }
+
+header nav ul li a:hover {
+  background: var(--first-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
 /* HEADER / NAVBAR STYLES END */
 /* FOOTER STYLES START */
 footer {
@@ -169,6 +176,7 @@ position: relative;
   padding: 5% 5% 20% 5%;
   display: block;
 }
+/* contact start */
 .contact-type{
   display: flex;
   justify-content: space-around;
@@ -176,4 +184,59 @@ position: relative;
 .contact-type a {
   text-decoration: none;
   color: var(--first-color)
+}
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+  #about-me{
+    padding-bottom: 0;
+    justify-content: space-around;
+    position: relative;
+  }
+  .intro{
+    justify-content: center;
+    float: center;
+  }
+  .intro img {
+    width: 100%;
+  }
+  #contact{
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+  }
+  .title {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    border-right: none;
+  }
+  .contact-type {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: space-around
+  }
 }

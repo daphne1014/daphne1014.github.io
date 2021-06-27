@@ -10,11 +10,10 @@ SO THAT I can review samples of their work and assess whether they're a good can
 * CSS
 
 ## Screenshot
-![screenshot of the page](./assets/images/screenshotJPG?raw=true "Screenshot")
+![screenshot of the page](./assets/images/screenshot.JPG?raw=true "Screenshot")
 
 ## Website
 https://daphne1014.github.io/
 
 ## Contribution
 Made with ❤️ by Daphne
-### ©️2021 Horiseon, Inc 

@@ -1,23 +1,23 @@
 :root {
-    --first-color: #f8b195;
-    --second-color: #f67280;
-    --third-color: #c06c84;
-    --fourth-color: #6c5b7b;
-    --fifth-color: #355c7d;
+    --first-color: #cac9cd;
+    --second-color: #9b9a9c;
+    --third-color: #6d6a6a;
+    --fourth-color: #3e3839;
+    --fifth-color: #100c07;
   }
   * {
     margin: 0;
     padding: 0;
   }
   body {
-    color:  var(--third-color);
+    color:  white;
     font-family: Helvetica, Arial, sans-serif;
   }
   /* HEADER / NAV BAR STYLES START */
 
 header {
   padding: 20px 35px;
-  background-color: var(--third-color);
+  background-color: var(--fifth-color);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -30,12 +30,12 @@ header h1 {
   font-weight: bold;
   margin: 0;
   font-size: 36px;
-  color: var(--first-color);
+  color: white;
 }
 
 header a {
   text-decoration: none;
-  color: var(--first-color);
+  color: white;
 }
 
 header nav {
@@ -65,8 +65,8 @@ header nav ul li a:hover {
 /* HEADER / NAVBAR STYLES END */
 /* FOOTER STYLES START */
 footer {
-  background: var(--third-color);
-  padding: 20px 15px;
+  background: var(--fifth-color);
+  padding: 40px 35px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -74,7 +74,7 @@ footer {
 }
 
 footer h2 {
-  color: var(--fourth-color);
+  color: white;
   font-size: 20px;
   margin: 0;
 }
@@ -93,6 +93,7 @@ section {
   padding-right: 15px;
   font-size: 15px;
   float:left;
+  color:var(--fourth-color);
 }
 /* HERO STYLES START */
 .hero {
@@ -102,7 +103,7 @@ height: 200px;
 position: relative;
 }
 .description {
-  background-color: var(--first-color);
+  background-color: var(--fifth-color);
   display: inline-block;
   padding: 20px;
   width: auto;
@@ -113,29 +114,37 @@ position: relative;
 /* HERO STYLE END */
 /* ABOUT ME SECTION START */
 .intro{
-  width:100;
   margin: 0 auto 30px auto;
-  overflow: auto;
+  /* overflow: auto; */
   align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .intro img {
   width: 20%;
-  float:left;
 }
 .about-me-bio {
   padding: 33px;
   float:left;
   width:60%;
+  color:var(--fourth-color);
 }
 /* ABOUT ME SECTION END */
 /* WORK STYLE START */
 .works-info{
-  display:flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
   padding-left: 10px;
+  height: 330px;
+}
+.works-info a{
+  text-decoration: none;
+  text-align: center;
+  color: white;
 }
 .works h3 {
   font-size: 35px;
@@ -143,38 +152,33 @@ position: relative;
 .works h4 {
   font-size: 20px;
 }
-.works a{
-  text-decoration: none;
-  text-align: center;
-  justify-content: center;
-  color:var(--first-color);
-  background-size: cover;
-  background-position: center;
-  border-radius: 15px;
-}
-
-.run-buddy {
+.run-buddy{
+  width: 100%;
   background-image: url(../images/runbuddy.JPG);
   background-size: cover;
-  width: 100%;
-  height: 40px;
-  padding: 5%;
   display: block;
-}
-.coming-soon {
-  background-color: var(--fifth-color);
-  display: block;
-  width:40%;
-  height: 20px;
-  padding: 5% 5% 20% 5%;
+  height: 150px;
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  ;
 }
 .robot-gladiators{
+  width:49%;
   background-image: url(../images/robot.jpg);
-  background-size: cover;
-  width:40%;
-  height: 20px;
-  padding: 5% 5% 20% 5%;
+  background-size:cover;
   display: block;
+  justify-content: center;
+  height:150px;
+  border-radius: 30px;
+}
+.coming-soon{
+  width: 49%;
+  background-color: var(--fifth-color);
+  display: inline-block;
+  height: 150px;
+  border-radius: 30px;
 }
 /* contact start */
 .contact-type{
@@ -183,7 +187,7 @@ position: relative;
 }
 .contact-type a {
   text-decoration: none;
-  color: var(--first-color)
+  color: var(--fourth-color)
 }
 @media screen and (max-width: 980px) {
   header {
@@ -206,22 +210,34 @@ position: relative;
   header nav ul li a {
     font-size: 20px;
   }
-
   footer h2, footer div {
     text-align: center;
     width: 100%;
   }
   #about-me{
-    padding-bottom: 0;
-    justify-content: space-around;
+    justify-content: center;
     position: relative;
+    padding:0;
+    padding: 0;
   }
   .intro{
     justify-content: center;
-    float: center;
+    float: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    width:100%;
   }
   .intro img {
-    width: 100%;
+    width: 60%;
+    width:inherit;
+    float: none;
+    justify-self: center;
+  }
+  .about-me-bio{
+    text-align: center;
+    justify-content: center;
+    width:90%
   }
   #contact{
     padding-bottom: 0;

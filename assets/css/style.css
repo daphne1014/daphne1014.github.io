@@ -1,88 +1,26 @@
 :root {
-    --first-color: #cac9cd;
-    --second-color: #9b9a9c;
-    --third-color: #6d6a6a;
-    --fourth-color: #3e3839;
-    --fifth-color: #100c07;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    color:  white;
-    font-family: Helvetica, Arial, sans-serif;
-  }
-  /* HEADER / NAV BAR STYLES START */
-
-header {
-  padding: 20px 35px;
-  background-color: var(--fifth-color);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  --first-color: #cac9cd;
+  --second-color: #9b9a9c;
+  --third-color: #6d6a6a;
+  --fourth-color: #3e3839;
+  --fifth-color: #100c07;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.row{
+  padding-bottom: 30px;
+}
+.navbar{  background-color: #f5f5f5;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-}
-
-header h1 {
-  font-weight: bold;
-  margin: 0;
-  font-size: 36px;
-  color: white;
-}
-
-header a {
-  text-decoration: none;
-  color: white;
-}
-
-header nav {
-  margin: 7px 0;
-}
-
-header nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-
-header nav ul li a {
-  padding: 10px 15px;
-  font-weight: lighter;
-  font-size: 1.55vw;
-}
-
-header nav ul li a:hover {
-  background: var(--first-color);
-  color: var(--secondary-color);
-  border-radius: 15px;
-  text-shadow: none;
-}
-/* HEADER / NAVBAR STYLES END */
-/* FOOTER STYLES START */
-footer {
-  background: var(--fifth-color);
-  padding: 40px 35px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-footer h2 {
-  color: white;
-  font-size: 20px;
-  margin: 0;
-}
-/* END FOOTER STYLES */
-/* STYLE ALL SECTION TAGS */
-section {
-  padding: 60px;
-}
+  z-index: 999;
+  }
 
 .title{
   text-align: right;
@@ -91,96 +29,30 @@ section {
   border-color: var(--third-color);
   flex-wrap: wrap;
   padding-right: 15px;
-  font-size: 15px;
   float:left;
   color:var(--fourth-color);
 }
-/* HERO STYLES START */
-.hero {
-background-image: url(../images/hero.jpg);
-background-size: cover;
-height: 200px;
-position: relative;
+.daphne-photo{
+  width:auto;
+  height:auto;
 }
-.description {
-  background-color: var(--fifth-color);
-  display: inline-block;
-  padding: 20px;
-  width: auto;
-  position: absolute;
-  bottom: 20px;
-  right: 30px;
-}
-/* HERO STYLE END */
-/* ABOUT ME SECTION START */
-.intro{
-  margin: 0 auto 30px auto;
-  /* overflow: auto; */
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.intro img {
-  width: 20%;
-}
-.about-me-bio {
-  padding: 33px;
-  float:left;
-  width:60%;
-  color:var(--fourth-color);
-}
-/* ABOUT ME SECTION END */
-/* WORK STYLE START */
-.works-info{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 10px;
-  height: 330px;
-}
-.works-info a{
+.card{
+  height:200px;
+  margin-bottom: 20px;
   text-decoration: none;
-  text-align: center;
-  color: white;
+  position:relative;
 }
-.works h3 {
-  font-size: 35px;
-}
-.works h4 {
-  font-size: 20px;
+.card-body{
+  position:absolute;
+  bottom: 10px;
+  color:black;
 }
 .run-buddy{
   width: 100%;
   background-image: url(../images/runbuddy.JPG);
   background-size: cover;
-  display: block;
-  height: 150px;
-  border-radius: 30px;
-  align-items: center;
-  justify-content: center;
-  justify-items: center;
-  ;
 }
-.robot-gladiators{
-  width:49%;
-  background-image: url(../images/robot.jpg);
-  background-size:cover;
-  display: block;
-  justify-content: center;
-  height:150px;
-  border-radius: 30px;
-}
-.coming-soon{
-  width: 49%;
-  background-color: var(--fifth-color);
-  display: inline-block;
-  height: 150px;
-  border-radius: 30px;
-}
-/* contact start */
+
 .contact-type{
   display: flex;
   justify-content: space-around;
@@ -189,70 +61,16 @@ position: relative;
   text-decoration: none;
   color: var(--fourth-color)
 }
-@media screen and (max-width: 980px) {
-  header {
-    padding-bottom: 0;
-    justify-content: center;
-    position: relative
-  }
-
-  header h1 {
-    width: 100%;
-    text-align: center;
-  }
-
-  header nav ul {
-    margin-top: 20px;
-    width: 100%;
-    justify-content: center;
-  }
-
-  header nav ul li a {
-    font-size: 20px;
-  }
-  footer h2, footer div {
-    text-align: center;
-    width: 100%;
-  }
-  #about-me{
-    justify-content: center;
-    position: relative;
-    padding:0;
-    padding: 0;
-  }
-  .intro{
-    justify-content: center;
-    float: none;
-    padding: 0;
-    margin: 0;
-    display: inline-block;
-    width:100%;
-  }
-  .intro img {
-    width: 60%;
-    width:inherit;
-    float: none;
-    justify-self: center;
-  }
-  .about-me-bio{
-    text-align: center;
-    justify-content: center;
-    width:90%
-  }
-  #contact{
-    padding-bottom: 0;
-    justify-content: center;
-    position: relative;
-  }
-  .title {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-    border-right: none;
-  }
-  .contact-type {
-    margin-top: 20px;
-    width: 100%;
-    justify-content: space-around
-  }
+footer {
+  background: var(--fifth-color);
+  padding: 40px 35px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer h2 {
+  color: #f5f5f5;
+  font-size: 20px;
+  margin: 0;
 }

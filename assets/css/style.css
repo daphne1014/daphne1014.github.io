@@ -54,6 +54,11 @@ body {
   background-size: cover;
 }
 
+.cocktail{
+  width: 100%;
+  background-image: url(../images/hero-background.jpg);
+  background-size: cover;
+}
 .contact-type{
   display: flex;
   justify-content: space-around;

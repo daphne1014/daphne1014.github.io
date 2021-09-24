@@ -59,6 +59,11 @@ body {
   background-image: url(../images/hero-background.jpg);
   background-size: cover;
 }
+.code-quiz{
+  width: 100%;
+  background: url(https://ubiqum.com/assets/uploads/2019/03/untitled-design-1-1-1.png);
+  background-size: cover;
+}
 .contact-type{
   display: flex;
   justify-content: space-around;

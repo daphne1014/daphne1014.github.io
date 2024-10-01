@@ -73,13 +73,13 @@ export default function Header() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          <a href="about" className={`text-sm font-semibold leading-6 ${headerText}`}>
+          <a href="/#/about" className={`text-sm font-semibold leading-6 ${headerText}`}>
             About Me
           </a>
-          <a href="experience" className={`text-sm font-semibold leading-6 ${headerText}`}>
+          <a href="/#/experience" className={`text-sm font-semibold leading-6 ${headerText}`}>
             Experiences
           </a>
-          <a href="projects" className={`text-sm font-semibold leading-6 ${headerText}`}>
+          <a href="/#/projects" className={`text-sm font-semibold leading-6 ${headerText}`}>
             Projects
           </a>
         </PopoverGroup>
@@ -109,19 +109,19 @@ export default function Header() {
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="py-6 space-y-2">
                 <a
-                  href="about"
+                  href="/#/about"
                   className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
                 >
                   About Me
                 </a>
                 <a
-                  href="experience"
+                  href="/#/experience"
                   className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
                 >
                   Experiences
                 </a>
                 <a
-                  href="projects"
+                  href="/#/projects"
                   className="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
                 >
                   Projects

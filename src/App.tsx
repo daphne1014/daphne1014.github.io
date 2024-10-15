@@ -7,7 +7,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className=" bg-gray-50">
+      <main className="bg-gray-50">
         <Outlet />
       </main>
       <Footer />

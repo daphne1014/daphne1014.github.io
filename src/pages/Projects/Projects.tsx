@@ -3,60 +3,11 @@ import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
 export default function Projects(){
     const projects = [
       {
-        name: "Project 1",
+        name: "Sales & Inventory Analytics Tool",
         height: "h-72",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt felis arcu, vitae congue dolor placerat nec. Nam vitae maximus mi. Maecenas accumsan diam dui, vitae maximus dui consequat in. Morbi gravida gravida commodo. Aliquam erat volutpat. Aenean imperdiet arcu purus, at posuere lectus hendrerit in.",
+        description: "Designed a versatile sales and inventory solution that offers personalized insights, data input flexibility, and seamless integration with EDI systems.",
+        bgImage: "/images/projects/salesInventoryAnalyticsBg.jpg",
         link: "",
-        bgImage: "",
-      },
-      {
-        name: "Project 2",
-        height: "h-60",
-        description: "",
-        link: "",
-        bgImage: "",
-      },
-      {
-        name: "Project 3",
-        height: "h-56",
-        description: "",
-        link: "",
-        bgImage: "",
-      },
-      {
-        name: "Project 4",
-        height: "h-64",
-        description: "",
-        link: "",
-        bgImage: "",
-      },
-      {
-        name: "Project 5",
-        height: "h-52",
-        description: "",
-        link: "",
-        bgImage: "",
-      },
-      {
-        name: "Project 6",
-        height: "h-60",
-        description: "",
-        link: "",
-        bgImage: "",
-      },
-      {
-        name: "Project 7",
-        height: "h-56",
-        description: "",
-        link: "",
-        bgImage: "",
-      },
-      {
-        name: "Project 8",
-        height: "h-72",
-        description: "",
-        link: "",
-        bgImage: "",
       },
     ];
     return (
@@ -70,7 +21,7 @@ export default function Projects(){
                     <a
                       key={idx}
                       href={project.link}
-                      className={`w-full ${project.height} bg-white rounded-lg overflow-hidden`}
+                      className={`w-full ${project.height} bg-[url('${project.bgImage}')] rounded-lg overflow-hidden`}
                     >
                       <div className="flex flex-col justify-end w-full h-full px-6 py-4 shadow-inset-bottom-xl bg-gradient-to-b from-transparent via-10% via-light-shadow-black to-dark-shadow-black to-80% text-white opacity-0 hover:opacity-100 transform translate-y-10 hover:translate-y-0 transition-all duration-500 ease-in-out">
                         <h2 className="text-2xl font-semibold y-[-10%]">

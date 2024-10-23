@@ -21,7 +21,7 @@ export default function Header() {
   
   
   const handleScroll = () => {
-    if(location.pathname==="/portfolio/")
+    if(location.pathname==="/")
     {
       if (window.scrollY > 0) {
         setHeaderOpacity("bg-opacity-100");
@@ -34,12 +34,10 @@ export default function Header() {
   };
 
   useEffect(() => {
-    if (location.pathname === "/portfolio/") {
-      // If on the index page ("/")
+    if (location.pathname === "/") {
       setHeaderOpacity("bg-opacity-5");
       setHeaderText("text-gray-300");
     } else {
-      // For any page that is not "/"
       setHeaderOpacity("bg-opacity-100");
       setHeaderText("text-gray-700");
     }
